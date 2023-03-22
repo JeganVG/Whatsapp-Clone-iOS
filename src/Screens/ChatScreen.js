@@ -7,7 +7,8 @@ import messages from '../../assets/data/messages.json'
 const ChatScreen = () => {
   return (
     <ImageBackground source={bg} style={styles.bg}>
-      <FlatList data={messages} renderItem={({ item })=> <Message message={item} />} />
+      <FlatList data={messages} renderItem={({ item })=> <Message message={item} />} 
+      style={styles.list} inverted/>
     </ImageBackground>
   );
 };
